@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+html{
+    background-color: royalblue;
+
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-filtro{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+}
+
+.buttonProcurar{
+    width: 18%;
+    height: 32px;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    text-decoration: none;
+}
+
+#botaoPokemon{
+    width: 100%;
+    border: solid 2px white;
+    border-radius: 5px;
+}
+
+#teste{
+    display: grid;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: red;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#foto{
+    width: 35px;
+    height: 35px;
+}
+
+#imagemlogo{
+    width: 500px;
+}
+
+#div-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
