@@ -48,7 +48,7 @@ function criarLista(){
           foto.id = 'foto'
           foto.src = data[i].url_icon;
           foto.onerror = function () {
-            foto.src = data[i].src = 'https://franceschiniimoveis.com.br/mobile/carregando.gif';
+            foto.src = data[i].src = data[i].url_icon_2;
           }
             let id = pokemon[i].id
           let ColocarNome = document.createElement('div');
