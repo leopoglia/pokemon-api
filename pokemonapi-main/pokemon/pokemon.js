@@ -22,10 +22,16 @@ function getPokemon(id) {
 
 function showPokemon(user) {
     if (!user) return;
+
     let divName = document.createElement('div');
     let divImagem = document.createElement('img');
     divName.innerText = user.name;
     divCarta.appendChild(divName);
+
+    if(user.id == 006){
+        console.log('pedro');
+        divImagem.src = 'https://thumbs.gfycat.com/AcrobaticMassiveGharial-max-1mb.gif';
+    }
 
     let divFotoPokemon = document.createElement('div');
     divFotoPokemon.id = 'fundoFoto';
