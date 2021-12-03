@@ -27,6 +27,8 @@ let buttonProcurar = document.createElement('button');
 buttonProcurar.className = 'buttonProcurar';
 buttonProcurar.innerText = 'Procurar';
 fundoProcurar.appendChild(buttonProcurar);
+buttonProcurar.onclick = function(){filtro(inputFiltro.innerHTML)}
+fundoProcurar.appendChild(buttonProcurar);
 
 function criarLista(){
 
@@ -89,7 +91,7 @@ input = document.querySelector('input');
 ol = document.querySelector('table');
 li = ol.getElementsByTagName('td');
 
-inputFiltro.addEventListener('keyup',function(data){
+function filtro(data){
 for (i = 0; i < 718; i++) {
 txtValue =  pokemon[i].name
 
@@ -99,4 +101,4 @@ li[i].style.display = "";
 li[i].style.display = "none";
 }
 }
-})
+}
